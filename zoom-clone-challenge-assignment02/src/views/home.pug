@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Noom
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    link(rel="stylesheet", href="/public/styles.css")
+  body
+    header
+      h1 Noom
+      h2 Welcome to Noom
+    main
+      div.room-list.container.limit-width
+        h3 Room List
+        ul.room-list.basic-column-flex
+      div.control-panel.basic-column-flex.limit-width
+        div.participant-list.container.hidden
+          h3 Participants 
+          ul.participant-list.basic-column-flex
+        div.nickname-change.container
+          h3 Change Nickname
+          form
+            input(placeholder="New Nickname", required, type="text")
+            button Change
+        div.room-create.container
+          h3 Create Room
+          form
+            input(placeholder="Room Name", required, type="text")
+            button Create
+        div.room-join.container
+          h3 Join Room
+          form
+            input(placeholder="Room Name", required, type="text")
+            button Join  
+
+      div.chat-room.basic-column-flex.limit-width.hidden
+        div.chat-board.container.basic-column-flex
+          h3 Chat Room
+          span.chat-room-title
+          span.chat-room-participant-count
+          ul.chat-board.basic-column-flex
+        div.message-send.container
+          form
+            div
+              input(placeholder="Message...", required, type="text")
+              div.message-send-placeholder
+                //- fake placeholder
+            button Send
+        div.chat-room-quit.container
+          button Quit
+    script(src="/socket.io/socket.io.js") 
+    script(src="/public/app.js") 

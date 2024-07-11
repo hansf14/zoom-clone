@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Noom
+    link(rel="stylesheet", href="/public/mvp.css")
+    link(rel="stylesheet", href="/public/styles.css")
+  body
+    header
+      h1 Noom
+      h2 Welcome to Noom
+    main
+      div.chat-room-list-container.container.limit-width-narrow
+        h3 Room List
+        ul.chat-room-list.basic-column-flex
+      div.control-panel.basic-column-flex.limit-width-narrow
+        div.group-chat-room-participant-list-container.container.hidden
+          h3 Group Chat Participants 
+          ul.group-chat-room-participant-list.basic-column-flex
+        div.video-chat-room-participant-list-container.container.hidden
+          h3 Video Chat Participants 
+          ul.video-chat-room-participant-list.basic-column-flex
+        div.nickname-change-container.container
+          h3 Change Nickname
+          form
+            input(placeholder="New Nickname", required, type="text")
+            button(type="submit") Change
+        div.chat-room-create-container.container
+          h3 Create Room
+          form
+            div.chat-room-type
+              label(for="room-type-select") Room Type
+              div.select-wrapper
+                select.room-type-select(id="room-type-select", required)
+                  option(value="" selected disabled hidden) Select Room Type
+                  option(value="GROUP-CHAT") Group Chat
+                  option(value="VIDEO-CHAT") Video Chat
+            div.chat-room-name
+              label(for="room-name") Room Name 
+              input(id="room-name", placeholder="Room Name", required, type="text")
+            button(type="submit") Create
+        div.chat-room-join-container.container
+          h3 Join Room
+          form
+            input(placeholder="Room Name", required, type="text")
+            button(type="submit") Join  
+
+      div.group-chat-room.basic-column-flex.limit-width-medium.hidden
+        div.group-chat-room__board-container.container.basic-column-flex
+          h3 Group Chat
+          span.group-chat-room__title
+          span.group-chat-room__participant-count
+          ul.group-chat-room__message-board.basic-column-flex
+        div.group-chat-room__public-message-send-container.container
+          form
+            div
+              input(required, type="text")
+              div.group-chat-room__public-message-send-placeholder
+                //- fake placeholder
+            button(type="submit") Send
+        div.group-chat-room__quit-container.container
+          button(type="button") Quit
+
+      div.video-chat-room.basic-column-flex.limit-width-medium.hidden
+        div.video-chat-room__board-container.container.basic-column-flex
+          h3 Video Chat
+          span.video-chat-room__title
+          span.video-chat-room__participant-count
+          ul.video-chat-room__cam-board.basic-column-flex
+            li.basic-column-flex
+              video.video-chat-room__my-cam(autoplay, playsinline, muted)
+              //- video.video-chat-room__my-cam(autoplay, playsinline, muted, width="400", height="400")
+              div.select-wrapper
+                select.video-chat-room__my-camera-change-select
+              div.video-chat-room__my-camera-buttons
+                button.video-chat-room__my-camera-mute-toggle-button(type="button") Mute
+                button.video-chat-room__my-camera-toggle-button(type="button") Turn Off Camera
+            li
+              video.video-chat-room__peer-cam(autoplay, playsinline)
+          ul.video-chat-room__message-board.basic-column-flex
+        div.video-chat-room__general-message-send-container.container
+          form
+            div
+              input(required, type="text")
+              div.video-chat-room__general-message-send-placeholder
+                //- fake placeholder
+            button(type="submit") Send
+        div.video-chat-room__quit-container.container
+          button(type="button") Quit
+    script(src="/socket.io/socket.io.js") 
+    script(src="/public/app.js") 
+    script(src="https://kit.fontawesome.com/6e05f26994.js", crossorigin="anonymous")

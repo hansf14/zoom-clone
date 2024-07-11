@@ -1,0 +1,6 @@
+- manager 기능
+- Participant List에 host, manager, guest 표시
+- host 넘기기(host), manager 임명(host), kick(host, manager)
+- roomType 변경 가능하게
+- video chat clean up when quitting / disconnecting
+- server disconnecting & client disconnection handling

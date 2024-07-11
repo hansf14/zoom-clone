@@ -1,0 +1,241 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  padding: 0 15px 1rem;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+h3 {
+  padding: 10px;
+  margin: 0;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+  min-width: 100px;
+  border: none;
+}
+
+input {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+ul {
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(94, 104, 121, 0.3);
+}
+
+.limit-width {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.basic-column-flex,
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.room-list.container,
+.control-panel,
+.chat-room {
+  word-break: break-word;
+  width: min-content;
+}
+
+.room-list.container,
+.chat-board.container,
+.participant-list.container {
+  min-height: 400px;
+}
+
+.room-list,
+.chat-board,
+.participant-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.room-list.container {
+  flex-grow: 7;
+  order: 1;
+}
+
+.chat-room {
+  flex-grow: 7;
+}
+
+.control-panel {
+  flex-grow: 1;
+  
+}
+
+.room-list.container h3,
+.chat-board.container h3 {
+  text-align: center;
+}
+
+ul.basic-column-flex,
+.participant-list.container,
+.chat-board.container {
+  flex-grow: 1;
+}
+
+ul.basic-column-flex {
+  padding: 0;
+}
+
+ul.basic-column-flex li {
+  padding: 5px 10px;
+}
+
+ul.basic-column-flex li:nth-child(odd) {
+  background-color: rgba(94, 104, 121, 0.1);
+}
+
+ul.basic-column-flex li:nth-child(even) {
+  background-color: rgba(94, 104, 121, 0.3);
+}
+
+.chat-room-title,
+.chat-room-participant-count,
+.nickname,
+.room-name {
+  font-weight: bold;
+}
+
+.chat-room-title {
+  text-align: center;
+}
+
+.chat-room-participant-count {
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.message-send.container > form > div:first-child {
+  position: relative;
+}
+
+.message-send-placeholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  padding: calc(0.4rem + 1px) calc(0.8rem + 1px);
+  font-size: inherit;
+  color: rgb(117, 117, 117);
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.message-send-placeholder p {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+/* visibility not works on ::-webkit-scrollbar */
+/* background-color not works on ::-webkit-scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* For Firefox*/
+/* scrollbar-color value will inherited. */
+/* scrollbar-width value doesn't inherit. */
+/* scrollbar-color and scrollbar-width not work on other browsers. */
+.room-list:hover,
+.chat-board:hover,
+.participant-list:hover {
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.room-list:not(:hover),
+.chat-board:not(:hover),
+.participant-list:not(:hover) {
+  scrollbar-color: transparent transparent;
+}
+
+* {
+  scrollbar-width: thin;
+}
+/* scrollbar-color: Two valid colors.
+The first applies to the thumb of the scrollbar, the second to the track. */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background-color: #888; 
+} */
+*:hover::-webkit-scrollbar-thumb {
+  background-color: #888; 
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+} */
+*:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+} */
+*:hover::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}

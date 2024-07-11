@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Noom
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    link(rel="stylesheet", href="/public/css/styles.css")
+  body
+    header#header
+      h1 Noom
+      h2 Welcome to Noom
+    main#main
+      div#board
+        ul#members
+        ul#chat
+      form#nickname
+        label(for="nickname_input") Change Nickname
+        input(id="nickname__input" type="text" placeholder="Nickname" required)
+        button(type="submit") Save
+      form#message
+        label(for="message__input") Message
+        div
+          //- input(id="message__input" type="text" placeholder="Your Message..." required)
+          input(id="message__input" type="text" required)
+          div.placeholder
+            p
+              //- new placeholder
+              span.nickname
+              .
+                Your Message...
+        button(type="submit") Send
+      script(src="/public/js/app.js") 

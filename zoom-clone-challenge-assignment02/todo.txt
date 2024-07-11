@@ -1,0 +1,13 @@
+해결 - nickname 변경하면 participants list도 업데이트
+해결 - nickname 변경하면 채팅창에 알림 ("change-nickname-notify")
+
+해결 - 메시지 전송 ("new-message-notify")
+
+해결 - participantList에서 자기 자신 nickname옆에 "(Me)"라고 표시
+해결 - messageSendInput에 "자기자신nickname: ..."라고 표시
+
+해결 - 채팅방 나가기
+
+해결 - 긴 이름/메시지 오면 container가 넓어지면서 레이아웃 바뀌는 문제 해결
+
+해결 - 나갔을때 알림 잘 되는지 확인

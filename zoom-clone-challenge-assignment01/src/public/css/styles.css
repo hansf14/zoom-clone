@@ -1,0 +1,124 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+input, label, select, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#main {
+  width: fit-content;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 15px 3rem;
+  gap: 10px;
+  justify-content: center;
+}
+
+#board {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#members,
+#chat {
+  overflow-y: scroll;
+  box-shadow: 0 0 10px rgba(94, 104, 121, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#members {
+  min-height: 200px;
+  flex: 3 0 0;
+  font-weight: bold;
+  min-width: 180px;
+}
+
+#chat {
+  height: 400px;
+  flex: 7 0 0;
+  min-width: 290px;
+}
+
+#members li,
+#chat li {
+  width: 100%;
+  word-break: break-word;
+  background-color: rgb(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#chat .nickname,
+#message .placeholder .nickname {
+  font-weight: bold;
+}
+
+#nickname {
+  flex-grow: 1;
+}
+
+#message {
+  flex-grow: 10;
+  min-width: 300px;
+}
+
+#message>div {
+  position: relative;
+}
+
+#message .placeholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  padding: calc(0.4rem + 1px) calc(0.8rem + 1px);
+  font-size: inherit;
+  color: rgb(117, 117, 117);
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+}
+
+#message .placeholder p {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
