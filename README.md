@@ -118,37 +118,37 @@
 <p>
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-01.PNG" alt="zoom-clone-challenge-assignment03-01.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-01.png" alt="zoom-clone-challenge-assignment03-01.png" />
   </div>  
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-02.PNG" alt="zoom-clone-challenge-assignment03-02.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-02.png" alt="zoom-clone-challenge-assignment03-02.png" />
   </div>
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-03.PNG" alt="zoom-clone-challenge-assignment03-03.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-03.png" alt="zoom-clone-challenge-assignment03-03.png" />
   </div>
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-04.PNG" alt="zoom-clone-challenge-assignment03-04.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-04.png" alt="zoom-clone-challenge-assignment03-04.png" />
   </div>
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-05.PNG" alt="zoom-clone-challenge-assignment03-05.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-05.png" alt="zoom-clone-challenge-assignment03-05.png" />
   </div>
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-06.PNG" alt="zoom-clone-challenge-assignment03-06.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-06.png" alt="zoom-clone-challenge-assignment03-06.png" />
   </div>
   &emsp;
   <div>
     &emsp;
-    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-07.PNG" alt="zoom-clone-challenge-assignment03-07.PNG" />
+    <img width="300px" src="preview-screenshots/zoom-clone-challenge-assignment03-07.png" alt="zoom-clone-challenge-assignment03-07.png" />
   </div>
 </p>
 
